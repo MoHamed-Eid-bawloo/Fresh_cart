@@ -1,0 +1,28 @@
+.productsBy .search{
+    transition: 0.3s;
+}
+
+.productsBy .search:hover{
+    box-shadow: 0 0 2px 5px #3ad13a52;
+}
+
+.productsBy .search button{
+    background-color: #3ad13a;
+    color: #fff;
+}
+
+.productsBy .search button:hover{
+    background-color: #78e878;
+}
+
+.productsBy .search input:focus{
+    box-shadow: none;
+    border-color: #3ad13a;
+    caret-color: #3ad13a;
+}
+
+@media(max-width : 320px){
+    .productsBy .search button{
+        width: 100%;
+    }
+}

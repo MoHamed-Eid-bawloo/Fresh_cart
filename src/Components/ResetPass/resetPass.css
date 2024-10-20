@@ -1,0 +1,18 @@
+.reset input{
+    box-shadow: none !important;
+}
+
+.reset input:focus{
+    border-color: rgb(33, 185, 33);
+}
+
+.reset button{
+    background-color: #2DB82D !important;
+    color: #fff !important;
+    transition: 0.3s;
+}
+
+.reset button:hover{
+    background-color: #49d749 !important;
+    transform: scale(1.05);
+}

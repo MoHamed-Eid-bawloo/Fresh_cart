@@ -1,0 +1,81 @@
+
+.login form input:focus{
+    box-shadow: 0 0 0 .25rem #2db92d7c;
+}
+
+.login form button{
+    background-color: #2db92d !important;
+    color: #fff !important;
+}
+
+.login form button:hover{
+    background-color: hsl(120, 67%, 60%) !important;
+}
+
+.login .request-warning{
+    transition: 1s;
+}
+
+@media(max-width : 500px){
+    .login .request-warning{
+        width: 100% !important;
+    }
+}
+
+.login form label{
+    background-color: red;
+    font-size: 0.875rem;
+    top: 0;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+@media(max-width : 370px){
+    .login form button{
+        margin-right: auto !important;
+    }
+    .login .help{
+        flex-basis: 100% !important;
+        text-align: center;
+        order: 6;
+    }
+}
+
+.login .help a{
+    color: #27a027;
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+.login .help a:hover{
+    color: #33d333;
+}
+
+.login .eye{
+    width : 45px;
+    cursor : pointer;
+    font-size : 12px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);    
+    box-sizing: content-box;
+}
+
+.login .eye.red{
+    background-color: rgb(212, 0, 0);
+}
+
+.login .eye.green{
+    background-color: #27a027;
+}
+
+.login .eye > div{
+    width: 22.5px;
+    transition: 0.3s;
+    top: 4px;
+    transform: translateX(0);
+}
+
+.login .eye > div.move{
+    transform: translateX(100%);
+}

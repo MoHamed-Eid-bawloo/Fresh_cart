@@ -1,0 +1,46 @@
+.slick-slide{
+    animation-name: slide-show;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.slick-slide img {
+    display: block;
+    height: 300px !important;
+    cursor: pointer;
+}
+
+@media(max-width : 576px){
+    .slick-slide img {
+        height: 500px !important;
+    }
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    line-height: 40px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: rgb(13, 95, 18);
+}
+
+.slider-container{
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slider{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #2c2d2c;
+}

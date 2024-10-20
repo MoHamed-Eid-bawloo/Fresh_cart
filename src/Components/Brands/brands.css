@@ -1,0 +1,9 @@
+.brands .row .inner{
+    transition: 0.5s;
+}
+
+.brands .row .inner:hover{
+    transform: translateY(0) scale(1.05) !important;
+    box-shadow: 0 0.5rem 2.5rem #b2b2b2 !important;
+    cursor: pointer;
+}

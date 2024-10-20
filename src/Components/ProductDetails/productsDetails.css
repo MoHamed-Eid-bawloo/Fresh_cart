@@ -1,0 +1,126 @@
+.product-details .category{
+    color: #2eb92e;
+}
+
+.product-details button{
+    background-color: #2eb92e;
+    color: #fff;
+}
+
+.product-details button:hover{
+    background-color: #53d353;
+    color: #fff;
+}
+
+.product-details .carousel-indicators{
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.product-details .over-lay{
+    background-color: rgba(0, 0, 0, 0.685);
+    z-index: 1032;
+    animation-name: open;
+    animation-duration: 0.7s;
+}
+
+@keyframes open{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.product-details .over-lay div{
+    max-width: 450px;
+    opacity: 0;
+    animation-name: open-show;
+    animation-duration: 0.7s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes open-show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.product-details .over-lay.close{
+    animation-name: close;
+    animation-duration: 0.7s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes close{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+.product-details .over-lay.close div{
+    opacity: 1;
+    animation-name: open-hide;
+    animation-duration: 0.7s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes open-hide{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.product-details .related-products > h2{
+    color: #2eb92e;
+}
+
+.product-details .related-products > h2::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    border-radius: 50px;
+    background-color: #2eb92e;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    transition: 0.3s;
+}
+
+.product-details .related-products:hover > h2::before{
+    width: 100%;
+}
+
+.product-details .loader {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform:translate(-50%, -50%) rotate(360deg);
+    }
+}

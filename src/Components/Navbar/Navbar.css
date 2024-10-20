@@ -1,0 +1,198 @@
+/* site logo */
+nav .navbar-brand{
+    transition: 0.3s;
+}
+
+/* navlinks */
+@media(max-width : 991px){
+    nav .nav-item .nav-link{
+        transition: 0.3s;
+    }
+
+    nav .nav-item .nav-link:hover, 
+    nav .nav-item .active{
+        margin-left: 10px;
+    }
+}
+
+/* social */
+nav .links ul li{
+    width: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .links ul li:hover{
+    transform: scale(1.22);
+}
+
+/* login & register */
+nav .sign .button-link:not(.logout):nth-child(1){
+    background-color: #2DB82D ;
+    color: white
+}
+
+nav .sign .button-link:not(.logout):nth-child(1):hover{
+    background-color: #54dd54 ;
+    color: white
+}
+
+nav .sign .button-link:nth-child(2){
+    color: #000;
+}
+
+nav .sign .button-link:nth-child(2):hover{
+    color: white;
+}
+
+@media(max-width : 453px){
+    nav .sign{
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 1rem;
+    }
+}
+
+nav .no-cart{
+    background-color: #289628;
+    font-size: 12px;
+    transform: translate(5px, 0px);
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav .no-cart:hover{
+    transform: scale(1.5);
+}
+
+@media(max-width: 991px){
+    nav .no-cart{
+        left: 0 !important;
+        transform: translate(30px, 5px);
+    }
+    nav .no-cart:hover{
+        transform: translate(30px, 5px) scale(1.5);
+    }
+}
+
+/* humburger bar */
+
+.navbar{
+    --bs-navbar-toggler-border-color: transparent !important;
+}
+
+#humburger-toggler{
+    transform: scale(0.8);
+}
+
+#humburger-toggler:focus{
+    box-shadow: 0 0 0 transparent;
+}
+
+#humburger-toggler:hover{
+    border: 0 solid transparent !important;
+}
+
+#humburger-toggler div{
+    --toggler-width: 1.5625rem;  /*25px*/
+    --toggler-height: var(--toggler-width);
+    --toggler-bg: rgba(0, 128, 0, 0);
+    --bar-transition: 0.3s;
+    --bar-height: 0.125rem;  /*2px*/
+    /* ----------------------------------------------- */
+    width: var(--toggler-width);
+    height: var(--toggler-height);
+    background-color: var(--toggler-bg);
+}
+
+
+#humburger-toggler div span, 
+#humburger-toggler.collapsed div span{
+    width: 100%;
+    border: var(--bar-height) solid black;
+    transition:  var(--bar-transition);
+    left: 0;
+}
+
+#humburger-toggler.collapsed div span.bar-middle{
+    opacity: 1;
+}
+
+#humburger-toggler div .bar-middle{
+    opacity: 0;
+} 
+
+
+#humburger-toggler div .bar-top{
+    top: 0;
+    transform: translateY(0%) rotate(0deg);
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bar-top-forward{
+    50%{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    100%{
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+}
+
+@keyframes bar-top-backward{
+    0%{
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    50%{
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    100%{
+        top: 0%;
+        transform: translateY(0%) rotate(0deg);
+    }
+}
+
+#humburger-toggler div .bar-bottom{
+    bottom: 0;
+    transform: translateY(0%) rotate(0deg);
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bar-bottom-forward{
+    50%{
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+
+    100%{
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+}
+
+@keyframes bar-bottom-backward{
+    0%{
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+
+    50%{
+        bottom: 50%;
+        transform: translateY(50%) rotate(0deg);
+    }
+
+    100%{
+        bottom: 0%;
+        transform: translateY(0%) rotate(0deg);
+    }
+}
+
+

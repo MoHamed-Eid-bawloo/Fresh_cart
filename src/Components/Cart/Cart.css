@@ -1,0 +1,83 @@
+.cart {
+  animation-name: cart;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cart {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.cart table tr > th:nth-child(1) {
+  width: 25% !important;
+}
+
+.cart table img {
+  max-width: 150px;
+}
+
+@media (max-width: 767px) {
+  .cart table tr td,
+  .cart table td button {
+    font-size: 18px !important;
+  }
+
+  .cart table td button {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 439px) {
+  .cart table img {
+    max-width: 65px;
+  }
+
+  .cart table tr td,
+  .cart table td button {
+    font-size: 16px !important;
+  }
+
+  .cart table td button {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 319px) {
+  .cart table img {
+    max-width: 60px;
+  }
+
+  .cart table tr td,
+  .cart table td button {
+    font-size: 14px !important;
+  }
+
+  .cart table td button {
+    font-size: 10px !important;
+  }
+}
+
+.cart .loader {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

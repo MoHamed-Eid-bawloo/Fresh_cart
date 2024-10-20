@@ -1,0 +1,58 @@
+
+
+.register form input:focus{
+    box-shadow: 0 0 0 .25rem #2db92d7c;
+}
+
+.register form .alert{
+    top: 0;
+    right: 0;
+}
+
+.register form button{
+    background-color: #2db92d !important;
+    color: #fff !important;
+}
+
+.register form button:hover{
+    background-color: hsl(120, 67%, 60%) !important;
+}
+
+.register .request-warning{
+    transition: 1s;
+}
+
+@media(max-width : 300px){
+    .register .request-warning{
+        width: 100% !important;
+    }
+}
+
+.register .eye{
+    width : 45px;
+    cursor : pointer;
+    font-size : 12px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);    
+    box-sizing: content-box;
+}
+
+.register .eye.red{
+    background-color: rgb(212, 0, 0);
+}
+
+.register .eye.green{
+    background-color: #27a027;
+}
+
+.register .eye > div{
+    width: 22.5px;
+    transition: 0.3s;
+    top: 4px;
+    transform: translateX(0);
+}
+
+.register .eye > div.move{
+    transform: translateX(100%);
+}

@@ -1,0 +1,35 @@
+footer{
+    background-color: #ececec;
+}
+
+footer button{
+    background-color: #2eb92e !important;
+    color: #fff !important;
+    transition: 0.3s !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+footer button:hover{
+    background-color: #4fdb4f !important;
+    color: #fff !important;
+    transform: scale(1.1) !important;
+}
+
+footer input{
+    box-shadow: none !important;
+}
+
+footer input:focus{
+    border-color: #2eb92e !important;
+}
+
+@media(max-width : 550px){
+    footer .mail{
+        flex-wrap: wrap;
+    }
+    footer input.mail-input{
+        width: 100% !important;
+    }
+}
+
