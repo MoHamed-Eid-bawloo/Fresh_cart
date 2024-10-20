@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Fresh_cart/static/css/main.c47b5861.css",
+    "main.js": "/Fresh_cart/static/js/main.862b7da5.js",
+    "static/media/instagram logo.png": "/Fresh_cart/static/media/instagram logo.0e78d6ae86dd78a77940.png",
+    "static/media/PayPal-Logo.jpg": "/Fresh_cart/static/media/PayPal-Logo.650e089a4f2c322532b9.jpg",
+    "static/media/master-card.png": "/Fresh_cart/static/media/master-card.dff634e8923b9cfd143a.png",
+    "static/media/Amazon_Pay_logo.svg.png": "/Fresh_cart/static/media/Amazon_Pay_logo.svg.0466dc2e6ca5513a8809.png",
+    "static/media/app-store.jpg": "/Fresh_cart/static/media/app-store.9a06f44f15aa64d62c51.jpg",
+    "static/media/slick.svg": "/Fresh_cart/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Fresh_cart/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Fresh_cart/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Fresh_cart/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Fresh_cart/index.html",
+    "main.c47b5861.css.map": "/Fresh_cart/static/css/main.c47b5861.css.map",
+    "main.862b7da5.js.map": "/Fresh_cart/static/js/main.862b7da5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c47b5861.css",
+    "static/js/main.862b7da5.js"
+  ]
+}
